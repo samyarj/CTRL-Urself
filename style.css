@@ -3,7 +3,8 @@ nav {
   float: left;
   width: 20%;
   position: fixed;
-  top: 50px;
+  top: 90px;
+  left: 5%;
 }
   
 nav ul {
@@ -25,11 +26,7 @@ nav a:hover {
   box-shadow: 2px 2px #333;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px #333;
-}
+
 
 body {
   font-family: Arial, sans-serif;
@@ -37,16 +34,14 @@ body {
   background: linear-gradient(to bottom, #7b5fac, #5a55ae, #3f51b5);
   color: white;
   max-width: 800px;
-  
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+  margin: auto;
 
 }
-
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #333;
+}
 form {
   display: inline-block;
   text-align: left;
