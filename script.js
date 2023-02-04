@@ -1,5 +1,11 @@
 // get the form element
-var form = document.getElementById("formId").submit();
+var form = document.getElementById("form").submit();
+const menuToggle = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('nav');
+
+menuToggle.addEventListener('click', function() {
+  navigation.classList.toggle('menu-active');
+});
 
 // attach a submit event handler to the form
 form.addEventListener("submit", function(event) {
