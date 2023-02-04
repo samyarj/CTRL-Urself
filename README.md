@@ -15,3 +15,7 @@ The back-end of the website is composed of:
 Usage 🚀
 
 To run the website, simply open index.html in a web browser 🌎. The website should display and function as expected 🙌.
+
+
+List of recommendations:
+https://docs.google.com/document/d/1nikK7G0Lv9ZCmnU8Gk6mglzJJ1k9DkjX/edit?usp=sharing&ouid=112652775476101000308&rtpof=true&sd=true
