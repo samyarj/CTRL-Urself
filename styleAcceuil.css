@@ -7,12 +7,14 @@ body {
     justify-content: center;
 }
 .start-button {
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: green;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    transform: scale(0.9);
+    animation: pulse 0.5s ease-in-out infinite;
 }
   
 .start-button:hover {
@@ -35,16 +37,17 @@ h1 {
     font-size: 1.5em;
     animation: message-animation 5s linear infinite;
 }
-
-@keyframes message-animation {
+  
+@keyframes pulse {
     0% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-30px);
+      transform: scale(1);
     }
     50% {
-        transform: translateY(0);
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
     }
 }
+  
   
