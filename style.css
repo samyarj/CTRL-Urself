@@ -6,7 +6,8 @@ nav {
   left: 5%;
   background-color: linear-gradient(to bottom, #7b5fac, #5a55ae, #3f51b5);;
   border-radius: 10px;
-  /* box-shadow: 2px 2px #333; */
+  overflow: auto;
+  transition: all 0.3s ease;
 }
 
 nav ul {
@@ -28,6 +29,7 @@ nav a {
   
 nav a:hover {
   transform: translateY(-2px);
+  box-shadow: 4px 4px #333;
 }
 
 body {
@@ -37,13 +39,14 @@ body {
   color: white;
   max-width: 800px;
   margin: auto;
-
 }
+
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
   text-shadow: 2px 2px #333;
 }
+
 form {
   display: inline-block;
   text-align: left;
@@ -54,12 +57,7 @@ form {
   width: 80%;
   max-width: 500px;
   margin: auto;
-}
-
-footer {
-  text-align: center;
-  padding: 1em 0;
-  width: 100%;
+  transition: all 0.3s ease;
 }
 
 input[type="radio"] {
@@ -86,5 +84,36 @@ input[type="submit"]:hover {
 footer {
   text-align: center;
   padding: 1em 0;
+  width: 100%;
 }
 
+.menu-toggle {
+  display: none;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px #333;
+}
+
+@media screen and (max-width: 1100px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  .menu-active nav {
+    display: block;
+  }
+}
