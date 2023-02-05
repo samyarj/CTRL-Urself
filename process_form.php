@@ -256,7 +256,7 @@ function recommandationsGenerales() {
 }
 function recommandationsReseaux() {
   $html = "<div>";
-  $html .= "<g>Recommandations réseaux sociaux</g>";
+  $html .= "<g>Recommandations réseaux sociaux</g><br>";
   $html .= "<f>Quelques signes d’addictions aux réseaux sociaux: Isolement, sentiment d’isolement malgré la connexion, difficulté considérable à passer une journée sans consulter les réseaux sociaux, peur à l’idée de perdre l’accès aux réseaux sociaux ou simplement de perdre son téléphone, etc.
 
   Quelques suggestions pour s’en sortir: 
@@ -265,31 +265,31 @@ function recommandationsReseaux() {
   -Désactiver les notifications de groupchats s’ils prennent trop de place.
   -Supprimez les applications de réseaux sociaux de vos téléphones et essayez d’y accéder davantage sur vos ordinateurs.
   -Abonnez-vous à du contenu avec lequel vous êtes en désaccord; le contenu qui nous est servi quotidiennement est fait pour que nous soyons toujours satisfait et en accord avec le contenu qu’on voit. C’est aussi un bon moyen de s’exposer à différentes perspectives. Le site Allside.com permet d’obtenir des visions différentes de plusieurs évènements internationaux.
-  </f>";
+  </f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsFacebook() {
   $html = "<div>";
-  $html .= "<g>Recommandations Facebook</g>";
+  $html .= "<g>Recommandations Facebook</g><br>";
   $html .= "<f>-L’extension «Facebook Newsfeed Eradicator» de Google Chrome permet d’enlever le fil d’actualité des applications comme Facebook et d’embrouiller certaines sections et notifications pour utiliser le potentiel de Facebook comme outil sans distraction addictive.
-  -Éviter de lire uniquement les articles de nouvelles qui vous sont proposés: certaines personnes croient utiliser les réseaux sociaux comme source fiable de nouvelles, mais ces dernières sont optimisées pour ne vous donner que la pointe de l’iceberg qui vous plairait le plus.</f>";
+  -Éviter de lire uniquement les articles de nouvelles qui vous sont proposés: certaines personnes croient utiliser les réseaux sociaux comme source fiable de nouvelles, mais ces dernières sont optimisées pour ne vous donner que la pointe de l’iceberg qui vous plairait le plus.</f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsInstagram() {
   $html = "<div>";
-  $html .= "<p>Recommandations Instagram</p>";
-  $html .= "<p>-Pour prendre des photos de bonnes qualités et avec des filtres intéressants, vous pouvez opter pour l’application VSCO.
+  $html .= "<g>Recommandations Instagram</g><br>";
+  $html .= "<f>-Pour prendre des photos de bonnes qualités et avec des filtres intéressants, vous pouvez opter pour l’application VSCO.
   -Éviter les Reels! Les pics de dopamines qui sont créés à chaque fois qu’on glisse notre doigt pour découvrir du nouveau contenu peuvent nous maintenir captivés pendant plusieurs heures.
-  -Prenez une pause des mentions «J’aime» et des commentaires. Tentez de ne rien publier pendant un jour ou deux; vous pourriez être surpris d'à quel point vous pourriez vous sentir mieux sans le besoin constant de validation des autres.</p>";
+  -Prenez une pause des mentions «J’aime» et des commentaires. Tentez de ne rien publier pendant un jour ou deux; vous pourriez être surpris d'à quel point vous pourriez vous sentir mieux sans le besoin constant de validation des autres.</f>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsTikTok() {
   $html = "<div>";
-  $html .= "<p>Recommandations TikTok</p>";
-  $html .= "<p>-Penser à supprimer l’application sur son téléphone et à la consulter uniquement sur ordinateur ou pas du tout. L’application crée un réflexe dans le cerveau pour qu’on aille l’ouvrir dès qu’on a un moment d’ennui.
+  $html .= "<g>Recommandations TikTok</g><br>";
+  $html .= "<f>-Penser à supprimer l’application sur son téléphone et à la consulter uniquement sur ordinateur ou pas du tout. L’application crée un réflexe dans le cerveau pour qu’on aille l’ouvrir dès qu’on a un moment d’ennui.
   -Désabonnez-vous des créateurs de contenu qui n’ajoute pas de valeur concrète à votre vie. Le contenu peut sembler amusant sur le coup, mais la valeur à long terme est beaucoup moins intéressante.
   -Trouvez-vous un autre passe-temps; les catalyseurs de dopamines comme TikTok sont puissants pour créer des addictions, surtout lorsqu’on passe par des moments difficiles. Essayez de planifier une sortie avec des amis, ou de prendre un nouveau cours en ligne, etc.</p>";
   $html .= "</div>";
@@ -297,81 +297,81 @@ function recommandationsTikTok() {
 }
 function recommandationsTwitter() {
   $html = "<div >";
-  $html .= "<p>Recommandations Twitter</p>";
-  $html .= "<p>-Interchangez votre fil d’actualité avec quelqu’un d’autre! L’application Vicariously permet de temporairement échanger ses champs d’intérêts. Vous en saurez peut-être plus sur les raisons et les opinions des autres.
-  -Désactivez les notifications provenant de pages ou de nouvelles publications.</p>";
+  $html .= "<g>Recommandations Twitter</g><br>";
+  $html .= "<f>-Interchangez votre fil d’actualité avec quelqu’un d’autre! L’application Vicariously permet de temporairement échanger ses champs d’intérêts. Vous en saurez peut-être plus sur les raisons et les opinions des autres.
+  -Désactivez les notifications provenant de pages ou de nouvelles publications.</f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsDivertissement() {
   $html = "<div>";
-  $html .= "<p>Recommandations Divertissement</p>";
-  $html .= "<p>Quelques signes d’addictions aux plateformes de divertissement: un flux constant de pensées à ce qui va se passer au prochain épisode, une envie incontrôlable de regarder une autre vidéo, une difficulté à s’endormir le soir, regarder ses séries en tout lieu (transport, en voyage, au toilettes, en conduisant, etc.)
+  $html .= "<g>Recommandations Divertissement</g><br>";
+  $html .= "<f>Quelques signes d’addictions aux plateformes de divertissement: un flux constant de pensées à ce qui va se passer au prochain épisode, une envie incontrôlable de regarder une autre vidéo, une difficulté à s’endormir le soir, regarder ses séries en tout lieu (transport, en voyage, au toilettes, en conduisant, etc.)
 
   Quelques suggestions pour s’en sortir: 
   -Optez pour des filmes plutôt que des séries.
   -Évitez de cliquer sur les recommandations de vidéos ou de séries: ces dernières sont ainsi optimiser pour capter encore mieux votre intérêt. 
-  -Désactivez la lecture automatique sur tous vos appareils.</p>";
+  -Désactivez la lecture automatique sur tous vos appareils.</f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsNetflix() {
   $html = "<div>";
-  $html .= "<p>Recommandations Netflix ou autres applications de séries</p>";
-  $html .= "<p>-Pensez à utiliser le mode avion lorsque vous utilisez votre téléphone.
-  - Dans l'application, allez sur sur Icône de profil/Gérer les profils/(profil à modifier)/Lecture automatique pour désactiver le paramètre.</p>";
+  $html .= "<g>Recommandations Netflix ou autres applications de séries</g><br>";
+  $html .= "<f>-Pensez à utiliser le mode avion lorsque vous utilisez votre téléphone.
+  - Dans l'application, allez sur sur Icône de profil/Gérer les profils/(profil à modifier)/Lecture automatique pour désactiver le paramètre.</f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsYoutube() {
   $html = "<div>";
-  $html .= "<p>Recommandations Youtube</p>";
-  $html .= "<p>-Dans les paramètres, désactivez les recommandations de vidéo.
+  $html .= "<g>Recommandations Youtube</g><br>";
+  $html .= "<f>-Dans les paramètres, désactivez les recommandations de vidéo.
   -Évitez les shorts! De la même manière que les Reels sur Instagram ou les vidéos sur TikTok, les pics de dopamines réguliers qui sont créés à chaque fois qu’on glisse notre doigt pour découvrir du nouveau contenu peuvent nous maintenir captivés pendant plusieurs heures.
   -Installez l’extension «Distraction-Free Youtube» sur Google Chrome pour enlever les recommandations de vidéos.
-  </p>";
+  </f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsCrunchyroll() {
   $html = "<div>";
-  $html .= "<p>Recommandations Crunchyroll ou autres applications d'animes</p>";
-  $html .= "<p>-Utilisez les animes comme une récompense: essayez d’accomplir vos tâches en premier. Ça réduit la culpabilité qui peut pousser à être encore plus accro de manière compulsive.
+  $html .= "<g>Recommandations Crunchyroll ou autres applications d'animes</g><br>";
+  $html .= "<f>-Utilisez les animes comme une récompense: essayez d’accomplir vos tâches en premier. Ça réduit la culpabilité qui peut pousser à être encore plus accro de manière compulsive.
   -Enlevez les sites et les pages de fans de vos favoris ou de votre fil d’actualité.
   -Évitez les grands évènements d’animes ou de mangas.
   -Coupez dans les dépenses de marchandises reliées aux animes pour diminuer l’envie incontrôlable d’en regarder un nouveau.
-  -Trouvez d’autres passe-temps; le site gamequitters propose «hobby tool» sur leur siteWeb pour vous inspirer.</p>";
+  -Trouvez d’autres passe-temps; le site gamequitters propose «hobby tool» sur leur siteWeb pour vous inspirer.</f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsJeuxVideos() {
   $html = "<div>";
-  $html .= "<p>Recommandations jeux-vidéos</p>";
-  $html .= "<p>Les jeux vidéos ont toujours causés beaucoup de débats au sujet de leurs conséquences potentielles. Néanmoins, il reste certain que l'excès des jeux peut être grandement néfaste.</p>";
+  $html .= "<g>Recommandations jeux-vidéos</g><br>";
+  $html .= "<f>Les jeux vidéos ont toujours causés beaucoup de débats au sujet de leurs conséquences potentielles. Néanmoins, il reste certain que l'excès des jeux peut être grandement néfaste.</f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsJeuxSolos() {
   $html = "<div>";
-  $html .= "<p>Recommandations jeux Solos</p>";
-  $html .= "<p>-Prenez des pauses fréquentes lorsque vous jouez et faites des activités différentes pour éviter de devenir trop absorbé par le jeu.
+  $html .= "<g>Recommandations jeux Solos</g><br>";
+  $html .= "<f>-Prenez des pauses fréquentes lorsque vous jouez et faites des activités différentes pour éviter de devenir trop absorbé par le jeu.
   -Participez à davantage d’activités en dehors des jeux vidéo afin de diversifier vos occupations 
-  </p>";
+  </f><br>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsJeuxMultijoueurs() {
   $html = "<div>";
-  $html .= "<p>Recommandations jeux multijoueurs</p>";
-  $html .= "<p>-Essayez d’autres modes de jeux que les jeux multijoueurs. Des modes aventures, ou créatifs peuvent diminuer l’exposition aux systèmes de récompenses et de niveau des jeux multijoueurs.</p>";
-  $html .= "</div>";
+  $html .= "<g>Recommandations jeux multijoueurs</g><br>";
+  $html .= "<f>-Essayez d’autres modes de jeux que les jeux multijoueurs. Des modes aventures, ou créatifs peuvent diminuer l’exposition aux systèmes de récompenses et de niveau des jeux multijoueurs.</f>";
+  $html .= "</div><br>";
   return $html;
 }
 function recommandationsCompetitif() {
   $html = "<div>";
-  $html .= "<p>Recommandations jeux compétitif</p>";
-  $html .= "<p>-Trouvez-vous un nouveau passe-temps (par exemple essayer un nouveau sport) afin de chercher à performer dans ce dernier tout en diminuant tranquillement votre temps de jeu quotidien. Cette manière va permettre de déplacer vos activités compétitives dans un autre domaine plus sain. 
-  -Une autre manière serait d’essayer un nouveau jeu moins compétitif qui n’a pas forcement de système de récompense continue. En effet, ce genre de jeu ne nécessite pas autant d’implication qu’un peu compétitif.</p>";
+  $html .= "<g>Recommandations jeux compétitif</g><br>";
+  $html .= "<f>-Trouvez-vous un nouveau passe-temps (par exemple essayer un nouveau sport) afin de chercher à performer dans ce dernier tout en diminuant tranquillement votre temps de jeu quotidien. Cette manière va permettre de déplacer vos activités compétitives dans un autre domaine plus sain. 
+  -Une autre manière serait d’essayer un nouveau jeu moins compétitif qui n’a pas forcement de système de récompense continue. En effet, ce genre de jeu ne nécessite pas autant d’implication qu’un peu compétitif.</f><br>";
   $html .= "</div>";
   return $html;
 }
