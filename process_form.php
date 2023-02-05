@@ -1,14 +1,8 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $username = $_POST['username'];
-  $email = $_POST['email'];
-  
-  // Do something with the form data, such as saving it to a database
-  // ...
+<html>
+<body>
 
-  echo "Username: $username<br>";
-  echo "Email: $email";
-}
-?>
+Welcome <?php echo $_GET["question10"]; ?><br>
+Your email address is: <?php echo $_GET["question11"]; ?>
 
-// sdklfuig;osegjk
+</body>
+</html> 
