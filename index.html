@@ -20,18 +20,19 @@
     <h1>Ctrl + U.</h1>    
     <form action="process_form.php" method="get" id="form"> 
       <!-- ajouter action "link" -->
-      <p> Lesquelles de ses réseaux sociaux utilisez-vous le plus souvent? ?</p>
-      <input type="checkbox" name="question1[]" value="REPONSE 1"> Facebook <br>
-      <input type="checkbox" name="question1[]" value="REPONSE 2"> Instagram<br>
-      <input type="checkbox" name="question1[]" value="REPONSE 3"> Twitter <br>
-      <input type="checkbox" name="question1[]" value="REPONSE 4"> Tiktok <br>
-      <br>
       
-      <p>QUESTION 2: Combien de temps passez-vous en moyenne par jour sur tous vos réseaux sociaux?</p>
-      <input type="radio" name="question2" value="REPONSE 1"> Moins de 1h<br>
-      <input type="radio" name="question2" value="REPONSE 2"> 1h-2h<br>
-      <input type="radio" name="question2" value="REPONSE 3"> 2h-5h<br>
-      <input type="radio" name="question2" value="REPONSE 4"> 5h et plus<br>
+      <p>QUESTION 1: Combien de temps passez-vous en moyenne par jour sur tous vos réseaux sociaux?</p>
+      <input type="radio" name="question1" value="REPONSE 1"> Moins de 1h<br>
+      <input type="radio" name="question1" value="REPONSE 2"> 1h-2h<br>
+      <input type="radio" name="question1" value="REPONSE 3"> 2h-5h<br>
+      <input type="radio" name="question1" value="REPONSE 4"> 5h et plus<br>
+      <br>
+
+      <p>QUESTION 2: Lesquels de ses réseaux sociaux utilisez-vous le plus souvent? ?</p>
+      <input type="checkbox" name="question2[]" value="REPONSE 1"> Facebook <br>
+      <input type="checkbox" name="question2[]" value="REPONSE 2"> Instagram<br>
+      <input type="checkbox" name="question2[]" value="REPONSE 3"> Twitter <br>
+      <input type="checkbox" name="question2[]" value="REPONSE 4"> Tiktok <br>
       <br>
 
       <p>QUESTION 3: Combien de temps passez-vous en moyenne par jour pour chatter et communiquer avec d’autres personnes?</p>
@@ -56,13 +57,13 @@
       <br>
 
       <p>QUESTION 6: Lesquelles de ces plateformes de streaming utilisez-vous le plus souvent?</p>
-      <input type="checkbox" name="question6" value="REPONSE 1"> Netflix<br>
-      <input type="checkbox" name="question6" value="REPONSE 2"> Crunchyroll<br>
-      <input type="checkbox" name="question6" value="REPONSE 3"> YouTube<br>
-      <input type="checkbox" name="question6" value="REPONSE 4"> Dailymotion<br>
-      <input type="checkbox" name="question6" value="REPONSE 5"> Prime Video<br>
-      <input type="checkbox" name="question6" value="REPONSE 6"> Disney Plus<br>
-      <input type="checkbox" name="question6" value="REPONSE 7"> Autres<br>
+      <input type="checkbox" name="question6[]" value="REPONSE 1"> Netflix<br>
+      <input type="checkbox" name="question6[]" value="REPONSE 2"> Crunchyroll<br>
+      <input type="checkbox" name="question6[]" value="REPONSE 3"> YouTube<br>
+      <input type="checkbox" name="question6[]" value="REPONSE 4"> Dailymotion<br>
+      <input type="checkbox" name="question6[]" value="REPONSE 5"> Prime Video<br>
+      <input type="checkbox" name="question6[]" value="REPONSE 6"> Disney Plus<br>
+      <input type="checkbox" name="question6[]" value="REPONSE 7"> Autres<br>
       <br>
 
       <p>QUESTION 7: Combien de temps par jour passez-vous sur les applications de divertissements?</p>
@@ -86,16 +87,16 @@
       <input type="radio" name="question9" value="REPONSE 4"> 5h et plus<br>
       <br>
 
-    <p>QUESTION 10: Quel type de jeux jouez-vous le plus?</p>
-      <input type="checkbox" name="question10" value="REPONSE 1"> Aucun<br>
-      <input type="checkbox" name="question10" value="REPONSE 2"> Jeux solo non compétitifs<br>
-      <input type="checkbox" name="question10" value="REPONSE 3"> Jeux solo compétitifs<br>
-      <input type="checkbox" name="question10" value="REPONSE 4"> Jeux multijoueurs<br>
+    <p>QUESTION 10: Quels type de jeux jouez-vous le plus?</p>
+      <input type="checkbox" name="question10[]" value="REPONSE 1"> Aucun<br>
+      <input type="checkbox" name="question10[]" value="REPONSE 2"> Jeux solo<br>
+      <input type="checkbox" name="question10[]" value="REPONSE 3"> Jeux multijoueurs<br>
+      <input type="checkbox" name="question10[]" value="REPONSE 4"> Jeux compétitifs<br>
       <br>
 
     <p>QUESTION 11: De quelle manière jouez-vous aux jeux vidéos?</p>
-      <input type="checkbox" name="question11" value="REPONSE 1"> Tout seul<br>
-      <input type="checkbox" name="question11" value="REPONSE 2"> Avec des amis<br>
+      <input type="checkbox" name="question11[]" value="REPONSE 1"> Tout seul<br>
+      <input type="checkbox" name="question11[]" value="REPONSE 2"> Avec des amis<br>
       <br>
 
       <input type="submit" value="Submit">
@@ -108,3 +109,103 @@
     
 </html>
 
+<?php
+function recommandationsGenerales() {
+  $html = "<div >";
+  $html .= "<p>Recommandations générales</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsReseaux() {
+  $html = "<div >";
+  $html .= "<p>Recommandations réseaux sociaux</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsFacebook() {
+  $html = "<div >";
+  $html .= "<p>Recommandations Facebook</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsInstagram() {
+  $html = "<div >";
+  $html .= "<p>Recommandations Instagram</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsTikTok() {
+  $html = "<div >";
+  $html .= "<p>Recommandations TikTok</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsTwitter() {
+  $html = "<div >";
+  $html .= "<p>Recommandations Twitter</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsDivertissement() {
+  $html = "<div >";
+  $html .= "<p>Recommandations Divertissement</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsNetflix() {
+  $html = "<div >";
+  $html .= "<p>Recommandations Netflix ou autres applications de séries</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsYoutube() {
+  $html = "<div >";
+  $html .= "<p>Recommandations Youtube</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsCrunchyroll() {
+  $html = "<div >";
+  $html .= "<p>Recommandations Crunchyroll ou autres applications d'animes</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsJeuxVideos() {
+  $html = "<div >";
+  $html .= "<p>Recommandations jeux-vidéos</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsSolo() {
+  $html = "<div >";
+  $html .= "<p>Recommandations jeux solos</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsMulti() {
+  $html = "<div >";
+  $html .= "<p>Recommandations jeux multijoueurs</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsCompetitif() {
+  $html = "<div >";
+  $html .= "<p>Recommandations jeux compétitifs</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+?>
