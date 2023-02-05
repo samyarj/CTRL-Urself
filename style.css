@@ -1,4 +1,6 @@
-
+input{
+  font-weight: normal;
+}
 form {
 
   text-align: left;
@@ -10,7 +12,7 @@ form {
   max-width: 500px;
   margin: auto;
   transition: all 0.3s ease;
-
+  font-weight:normal,
 }
 
 input[type="radio"] {
@@ -87,6 +89,7 @@ when you hover on button */
 }
 
 body {
+  font-weight: normal;
   font-family: 'Helvetica Neue', sans-serif;
   background-color: #f7f7f7;
   margin: 0;
