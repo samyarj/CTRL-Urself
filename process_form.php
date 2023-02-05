@@ -9,16 +9,17 @@
       <h1>Ctrl + U</h1>
       <img src="Logo.png" class="logo">
       <nav class="navigation">
-        <a class="a" href="Autre.html#About">About</a>
+        <a class="a" href="index.html#About">About</a>
       </nav>
     </header>
   </head>
   
   
   <body>  
-    <form action="nouveau.php" method="get" id="form"> 
+    <e>
+    <form action="process_form.php" method="get" id="form"> 
       <!-- ajouter action "link" -->
-      
+    
       <p>QUESTION 1: Combien de temps passez-vous en moyenne par jour sur tous vos réseaux sociaux?</p>
       <input type="radio" name="question1" value="REPONSE 1"> Moins de 1h<br>
       <input type="radio" name="question1" value="REPONSE 2"> 1h-2h<br>
@@ -87,10 +88,9 @@
       <input type="checkbox" name="question10[]" value="REPONSE 2"> Jeux solo<br>
       <input type="checkbox" name="question10[]" value="REPONSE 3"> Jeux multijoueurs<br>
       <input type="checkbox" name="question10[]" value="REPONSE 4"> Jeux compétitifs<br>
-      <br>
-
-      <input type="submit" value="Submit">
+      <br>      <input type="submit" value="Submit">
     </form>
+    </e>
   </body>
 
   <footer>
@@ -249,7 +249,7 @@ if (isset($_GET['question10'])) {
 
 function recommandationsGenerales() {
   $html = "<div>";
-  $html .= "<g>Pour mieux gérer sa relation avec les écrans</g>";
+  $html .= "<g>Pour mieux gérer sa relation avec les écrans</g><br>";
   $html .= "<f>-Évitez de «scroll» sur vos téléphones au moins 30 minute avant de dormir et après vous être réveillés. Une bonne solution serait de charger le téléphone dans une pièce à l’extérieur de la chambre durant la nuit.
   -Faites du souper un moment réservé sans téléphone pour se reconnecter avec les autres.
   -Prendre une journée de congé de son téléphone: Ce jour sera dédié à examiner comment l’utilisation du téléphone avec intention peut améliorer votre humeur, votre concentration ainsi que vos relations.
@@ -257,7 +257,7 @@ function recommandationsGenerales() {
   -Mettez votre téléphone en «GreyScale». Sur Iphone, aller dans général/accessibilité/affichage et taille de texte/Niveaux de gris.
   -Faites un ménage de votre écran d’accueil­; ne conservez que les applications qui sont de réels outils pour vous et utilisez la barre de recherche de votre téléphone pour accéder aux autres applications (pour limiter le temps de «scroll» inconscient).
   -Non seulement vous pouvez limiter le nombre de notifications que vous recevez, mais vous pouvez aussi enlever les bannières d’informations qui sont faites spécifiquement pour causer une peur de manquer des nouvelles (Fear of missing out).
-  </f>";
+  </f><br>";
   $html .= "</div>";
   return $html;
 }

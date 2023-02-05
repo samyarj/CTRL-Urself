@@ -1,103 +1,29 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Controle It.</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="AutreCss.css">
+  </head>
+  <body>
     <header class="header">
       <h1>Ctrl + U</h1>
-      <img src="logo.png" class="logo">
+      <img src="Logo.png" class="logo">
       <nav class="navigation">
-        <a class="a" href="Autre.html#About">About</a>
+        <a class="a" href="#About">About</a>
       </nav>
     </header>
-  </head>
-  
-
-  <body>
- 
-    <?php include 'phpWriter.php'; ?>
-    <h7>Questionnaire: </h7>    
-    <form action="process_form.php" method="get" id="form"> 
-      <!-- ajouter action "link" -->
-      <h2>
-      <p>QUESTION 1: Combien de temps passez-vous en moyenne par jour sur tous vos réseaux sociaux?</p>
-      <input type="radio" name="question1" value=""> Moins de 1h<br>
-      <input type="radio" name="question1" value="<?php echo htmlspecialchars(recommandationsReseaux()); ?>"> 1h-2h<br>
-      <input type="radio" name="question1" value="<?php echo htmlspecialchars(recommandationsReseaux()); ?>"> 2h-5h<br>
-      <input type="radio" name="question1" value="<?php echo htmlspecialchars(recommandationsReseaux()); ?>"> 5h et plus<br>
-      <br>
-
-      <p>QUESTION 2: Lesquels de ses réseaux sociaux utilisez-vous le plus souvent? ?</p>
-      <input type="checkbox" name="question2[]" value="<?php echo htmlspecialchars(recommandationsFacebook()); ?>"> Facebook <br>
-      <input type="checkbox" name="question2[]" value="<?php echo htmlspecialchars(recommandationsInstagram()); ?>"> Instagram<br>
-      <input type="checkbox" name="question2[]" value="<?php echo htmlspecialchars(recommandationsTwitter()); ?>"> Twitter <br>
-      <input type="checkbox" name="question2[]" value="<?php echo htmlspecialchars(recommandationsTikTok()); ?>"> Tiktok <br>
-      <br>
-
-      <p>QUESTION 3: Combien de temps passez-vous en moyenne par jour pour chatter et communiquer avec d’autres personnes?</p>
-      <input type="radio" name="question3" value="REPONSE 1"> Moins de 1h<br>
-      <input type="radio" name="question3" value="REPONSE 2"> 1h-2h<br>
-      <input type="radio" name="question3" value="REPONSE 3"> 2h-4h<br>
-      <input type="radio" name="question3" value="REPONSE 4"> 4h et plus<br>
-      <br>
-
-      <p>QUESTION 4: Combien de temps passez-vous en moyenne par jour à communiquer dans des plateformes de bureau (gmail, teams, webex, horde)??</p>
-      <input type="radio" name="question4" value="REPONSE 1"> moins de 1h<br>
-      <input type="radio" name="question4" value="REPONSE 2"> 1h-2h<br>
-      <input type="radio" name="question4" value="REPONSE 3"> 2h-4h<br>
-      <input type="radio" name="question4" value="REPONSE 4"> 4h et plus<br>
-      <br>
-
-      <p>QUESTION 5: Combien de temps consacrez-vous quotidiennement à regarder des posts, stories et vidéos de d’autres personnalités sociales (que ce soit vos amis ou des célébrités)?</p>
-      <input type="radio" name="question5" value="REPONSE 1"> moins de 1h<br>
-      <input type="radio" name="question5" value="REPONSE 2"> 1h-2h<br>
-      <input type="radio" name="question5" value="REPONSE 3"> 2h-4h<br>
-      <input type="radio" name="question5" value="REPONSE 4"> 4h et plus<br>
-      <br>
-
-      <p>QUESTION 6: Combien de temps par jour passez-vous sur les applications de divertissements?</p>
-      <input type="radio" name="question6" value="REPONSE 1"> moins de 1h<br>
-      <input type="radio" name="question6" value="<?php echo htmlspecialchars(recommandationsDivertissement()); ?>"> 1h-2h<br>
-      <input type="radio" name="question6" value="<?php echo htmlspecialchars(recommandationsDivertissement()); ?>"> 2h-5h<br>
-      <input type="radio" name="question6" value="<?php echo htmlspecialchars(recommandationsDivertissement()); ?>"> 5h et plus<br>
-      <br>
-
-      <p>QUESTION 7: Lesquelles de ces plateformes de streaming utilisez-vous le plus souvent?</p>
-      <input type="checkbox" name="question7[]" value="<?php echo htmlspecialchars(recommandationsNetflix()); ?>"> Netflix, PrimeVideo, DisneyPlus, Viki, etc.<br>
-      <input type="checkbox" name="question7[]" value="<?php echo htmlspecialchars(recommandationsYoutube()); ?>"> Crunchyroll, Funimation, ou autres plateformes de visionnement d'animes<br>
-      <input type="checkbox" name="question7[]" value="<?php echo htmlspecialchars(recommandationsCrunchyroll()); ?>"> YouTube, Dailymotion, etc.<br>
-      <input type="checkbox" name="question7[]" value=""> Autres<br>
-      <br>
-      
-      <p>QUESTION 8: Combien de vidéos (youtube, dailymotion différentes écoutez-vous en moyenne dans une journée?</p>
-      <input type="radio" name="question8" value="REPONSE 1"> aucune<br>
-      <input type="radio" name="question8" value="REPONSE 2"> entre 1 et 3<br>
-      <input type="radio" name="question8" value="REPONSE 3"> entre 4-10<br>
-      <input type="radio" name="question8" value="REPONSE 4"> plus que 10<br>
-      <br>
-
-      <p>QUESTION 9: Combien de temps passez-vous à jouer à des jeux vidéo (que ce soit sur votre téléphone ou votre console)?</p>
-      <input type="radio" name="question9" value="REPONSE 1"> moins de 1h<br>
-      <input type="radio" name="question9" value="<?php echo htmlspecialchars(recommandationsJeuxVideos()); ?>"> 1h-2h<br>
-      <input type="radio" name="question9" value="<?php echo htmlspecialchars(recommandationsJeuxVideos()); ?>"> 2h-5h<br>
-      <input type="radio" name="question9" value="<?php echo htmlspecialchars(recommandationsJeuxVideos()); ?>"> 5h et plus<br>
-      <br>
-
-    <p>QUESTION 10: Quels type de jeux jouez-vous le plus?</p>
-      <input type="checkbox" name="question10[]" value="REPONSE 1"> Aucun<br>
-      <input type="checkbox" name="question10[]" value="<?php echo htmlspecialchars(recommandationsSolo()); ?>"> Jeux solo<br>
-      <input type="checkbox" name="question10[]" value="<?php echo htmlspecialchars(recommandationsMulti()); ?>"> Jeux multijoueurs<br>
-      <input type="checkbox" name="question10[]" value="<?php echo htmlspecialchars(recommandationsCompetitif()); ?>"> Jeux compétitifs<br>
-      <br>
-
-      <input type="submit" value="Submit">
-    </form>
-  </body>
-</h2>
-  <footer>
-      <p>Copyright © 2023 Cntl + U Squad</p>
-    </footer>
-    
+    <div class="content">
+      <h4 class="Titre">CtrlUrself.</h4>
+      <h2> L'application Web pour reprendre le controle sur vos ecrans. </h2>
+      <a href="process_form.php" > 
+      <button data-text="Awesome" class="button" >
+        <span class="actual-text" >
+        &nbsp; Start&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">
+        &nbsp; Start&nbsp;</span></button></a>
+      <h3 id="About">About</h3>
+      <p class="p">Ctrl+U a ete construite pour vous offrir des recommandations personalisee d'habitudes simples et concretes a prendre pour diminuer votre utilisation des ecrans et mieux gerer vos addictions. Nous avons a coeur la sante mentale et le bien-etre de tous et c'est pourquoi nous croyons fermement que la solution a une societe de plus en plus axee sur la technologie reside dans le developpement de strategies pour s'en proteger. Remplissez le formulaire afin de trouver qu'est-ce qui vous aidera le mieux!</p>
+    </div>
+    <footer class="footer">
+      Copyright © 2023 Cntl + U Squad
+    </footer>  
+  </body>  
 </html>
-
