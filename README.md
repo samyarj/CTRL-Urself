@@ -4,7 +4,7 @@ This repository contains the front-end and back-end files for a website that pro
 ## How to Use 💡
 * Clone or download the repository to your local machine 💾.
 
-* Open the `index.html` file in a web browser 🌐.
+* Open the `index.html` file in a web browser 🌐. https://samyarj.github.io/PolyHx2023.github.io/Autre.html
 
 * Answer the multiple choice questions 🤔.
 
