@@ -4,8 +4,12 @@
     <title>Controle It. </title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="/script.js"></script>
-    <header>
-      
+    <header class="header">
+      <h1>Ctrl + U</h1>
+      <img src="logo.png" class="logo">
+      <nav class="navigation">
+        <a class="a" href="Autre.html#About">About</a>
+      </nav>
     </header>
   </head>
   
@@ -13,10 +17,10 @@
   <body>
  
     <?php include 'phpWriter.php'; ?>
-    <h1>Ctrl + U.</h1>    
+    <h7>Questionnaire: </h7>    
     <form action="process_form.php" method="get" id="form"> 
       <!-- ajouter action "link" -->
-      
+      <h2>
       <p>QUESTION 1: Combien de temps passez-vous en moyenne par jour sur tous vos réseaux sociaux?</p>
       <input type="radio" name="question1" value=""> Moins de 1h<br>
       <input type="radio" name="question1" value="<?php echo htmlspecialchars(recommandationsReseaux()); ?>"> 1h-2h<br>
@@ -90,7 +94,7 @@
       <input type="submit" value="Submit">
     </form>
   </body>
-
+</h2>
   <footer>
       <p>Copyright © 2023 Cntl + U Squad</p>
     </footer>
