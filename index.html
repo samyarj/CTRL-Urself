@@ -16,17 +16,17 @@
       <!-- ajouter action "link" -->
       
       <p>QUESTION 1: Combien de temps passez-vous en moyenne par jour sur tous vos réseaux sociaux?</p>
-      <input type="radio" name="question1" value="REPONSE 1"> Moins de 1h<br>
-      <input type="radio" name="question1" value="REPONSE 2"> 1h-2h<br>
-      <input type="radio" name="question1" value="REPONSE 3"> 2h-5h<br>
-      <input type="radio" name="question1" value="REPONSE 4"> 5h et plus<br>
+      <input type="radio" name="question1" value=""> Moins de 1h<br>
+      <input type="radio" name="question1" value="<?php echo htmlspecialchars(recommandationsReseaux()); ?>"> 1h-2h<br>
+      <input type="radio" name="question1" value="<?php echo htmlspecialchars(recommandationsReseaux()); ?>"> 2h-5h<br>
+      <input type="radio" name="question1" value="<?php echo htmlspecialchars(recommandationsReseaux()); ?>"> 5h et plus<br>
       <br>
 
       <p>QUESTION 2: Lesquels de ses réseaux sociaux utilisez-vous le plus souvent? ?</p>
-      <input type="checkbox" name="question2[]" value="REPONSE 1"> Facebook <br>
-      <input type="checkbox" name="question2[]" value="REPONSE 2"> Instagram<br>
-      <input type="checkbox" name="question2[]" value="REPONSE 3"> Twitter <br>
-      <input type="checkbox" name="question2[]" value="REPONSE 4"> Tiktok <br>
+      <input type="checkbox" name="question2[]" value="<?php echo htmlspecialchars(recommandationsFacebook()); ?>"> Facebook <br>
+      <input type="checkbox" name="question2[]" value="<?php echo htmlspecialchars(recommandationsInstagram()); ?>"> Instagram<br>
+      <input type="checkbox" name="question2[]" value="<?php echo htmlspecialchars(recommandationsTwitter()); ?>"> Twitter <br>
+      <input type="checkbox" name="question2[]" value="<?php echo htmlspecialchars(recommandationsTikTok()); ?>"> Tiktok <br>
       <br>
 
       <p>QUESTION 3: Combien de temps passez-vous en moyenne par jour pour chatter et communiquer avec d’autres personnes?</p>
@@ -43,28 +43,25 @@
       <input type="radio" name="question4" value="REPONSE 4"> 4h et plus<br>
       <br>
 
-      <p>QUESTION 5: Combien de temps consacrez-vous quotidiennement à regarder des posts, story et vidéos de d’autres personnalités sociales (que ce soit vos amis ou des célébrités)?</p>
+      <p>QUESTION 5: Combien de temps consacrez-vous quotidiennement à regarder des posts, stories et vidéos de d’autres personnalités sociales (que ce soit vos amis ou des célébrités)?</p>
       <input type="radio" name="question5" value="REPONSE 1"> moins de 1h<br>
       <input type="radio" name="question5" value="REPONSE 2"> 1h-2h<br>
       <input type="radio" name="question5" value="REPONSE 3"> 2h-4h<br>
       <input type="radio" name="question5" value="REPONSE 4"> 4h et plus<br>
       <br>
 
-      <p>QUESTION 6: Lesquelles de ces plateformes de streaming utilisez-vous le plus souvent?</p>
-      <input type="checkbox" name="question6[]" value="REPONSE 1"> Netflix<br>
-      <input type="checkbox" name="question6[]" value="REPONSE 2"> Crunchyroll<br>
-      <input type="checkbox" name="question6[]" value="REPONSE 3"> YouTube<br>
-      <input type="checkbox" name="question6[]" value="REPONSE 4"> Dailymotion<br>
-      <input type="checkbox" name="question6[]" value="REPONSE 5"> Prime Video<br>
-      <input type="checkbox" name="question6[]" value="REPONSE 6"> Disney Plus<br>
-      <input type="checkbox" name="question6[]" value="REPONSE 7"> Autres<br>
+      <p>QUESTION 6: Combien de temps par jour passez-vous sur les applications de divertissements?</p>
+      <input type="radio" name="question6" value="REPONSE 1"> moins de 1h<br>
+      <input type="radio" name="question6" value="<?php echo htmlspecialchars(recommandationsDivertissement()); ?>"> 1h-2h<br>
+      <input type="radio" name="question6" value="<?php echo htmlspecialchars(recommandationsDivertissement()); ?>"> 2h-5h<br>
+      <input type="radio" name="question6" value="<?php echo htmlspecialchars(recommandationsDivertissement()); ?>"> 5h et plus<br>
       <br>
 
-      <p>QUESTION 7: Combien de temps par jour passez-vous sur les applications de divertissements?</p>
-      <input type="radio" name="question7" value="REPONSE 1"> moins de 1h<br>
-      <input type="radio" name="question7" value="REPONSE 2"> 1h-2h<br>
-      <input type="radio" name="question7" value="REPONSE 3"> 2h-5h<br>
-      <input type="radio" name="question7" value="REPONSE 4"> 5h et plus<br>
+      <p>QUESTION 7: Lesquelles de ces plateformes de streaming utilisez-vous le plus souvent?</p>
+      <input type="checkbox" name="question7[]" value="<?php echo htmlspecialchars(recommandationsNetflix()); ?>"> Netflix, PrimeVideo, DisneyPlus, Viki, etc.<br>
+      <input type="checkbox" name="question7[]" value="<?php echo htmlspecialchars(recommandationsYoutube()); ?>"> Crunchyroll, Funimation, ou autres plateformes de visionnement d'animes<br>
+      <input type="checkbox" name="question7[]" value="<?php echo htmlspecialchars(recommandationsCrunchyroll()); ?>"> YouTube, Dailymotion, etc.<br>
+      <input type="checkbox" name="question7[]" value=""> Autres<br>
       <br>
       
       <p>QUESTION 8: Combien de vidéos (youtube, dailymotion différentes écoutez-vous en moyenne dans une journée?</p>
@@ -76,21 +73,16 @@
 
       <p>QUESTION 9: Combien de temps passez-vous à jouer à des jeux vidéo (que ce soit sur votre téléphone ou votre console)?</p>
       <input type="radio" name="question9" value="REPONSE 1"> moins de 1h<br>
-      <input type="radio" name="question9" value="REPONSE 2"> 1h-2h<br>
-      <input type="radio" name="question9" value="REPONSE 3"> 2h-5h<br>
-      <input type="radio" name="question9" value="REPONSE 4"> 5h et plus<br>
+      <input type="radio" name="question9" value="<?php echo htmlspecialchars(recommandationsJeuxVideos()); ?>"> 1h-2h<br>
+      <input type="radio" name="question9" value="<?php echo htmlspecialchars(recommandationsJeuxVideos()); ?>"> 2h-5h<br>
+      <input type="radio" name="question9" value="<?php echo htmlspecialchars(recommandationsJeuxVideos()); ?>"> 5h et plus<br>
       <br>
 
     <p>QUESTION 10: Quels type de jeux jouez-vous le plus?</p>
       <input type="checkbox" name="question10[]" value="REPONSE 1"> Aucun<br>
-      <input type="checkbox" name="question10[]" value="REPONSE 2"> Jeux solo<br>
-      <input type="checkbox" name="question10[]" value="REPONSE 3"> Jeux multijoueurs<br>
-      <input type="checkbox" name="question10[]" value="REPONSE 4"> Jeux compétitifs<br>
-      <br>
-
-    <p>QUESTION 11: De quelle manière jouez-vous aux jeux vidéos?</p>
-      <input type="checkbox" name="question11[]" value="REPONSE 1"> Tout seul<br>
-      <input type="checkbox" name="question11[]" value="REPONSE 2"> Avec des amis<br>
+      <input type="checkbox" name="question10[]" value="<?php echo htmlspecialchars(recommandationsSolo()); ?>"> Jeux solo<br>
+      <input type="checkbox" name="question10[]" value="<?php echo htmlspecialchars(recommandationsMulti()); ?>"> Jeux multijoueurs<br>
+      <input type="checkbox" name="question10[]" value="<?php echo htmlspecialchars(recommandationsCompetitif()); ?>"> Jeux compétitifs<br>
       <br>
 
       <input type="submit" value="Submit">
