@@ -56,27 +56,3 @@ footer {
   padding: 1em 0;
   width: 100%;
 }
-
-@media screen and (max-width: 1100px) {
-  nav {
-    display: none;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: linear-gradient(to bottom, #7b5fac, #5a55ae, #3f51b5);
-    overflow: auto;
-    transition: all 0.3s ease;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  nav a {
-    margin: 10px 0;
-    text-align: center;
-  }
-}
