@@ -97,4 +97,24 @@ function recommandationsCompetitif() {
   $html .= "</div>";
   return $html;
 }
+
+
+/// writer
+$file = fopen("recommendation.html", "w");
+
+if ($file == false) {
+    echo "Error in opening file";
+    exit();
+}
+
+$new_content = recommandationsGenerales();
+
+fwrite($file, $new_content);
+fclose($file);
+
+echo "File updated successfully";
+
+
+
+
 ?>
