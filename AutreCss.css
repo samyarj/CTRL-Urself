@@ -44,8 +44,8 @@ var(--animation-color);
 .button:hover .hover-text {
 width: 100%;
 filter: drop-shadow (0 0 23px
-var(--animation-color))
-
+var(--animation-color));
+cursor:pointer;
 }
 
 body {
