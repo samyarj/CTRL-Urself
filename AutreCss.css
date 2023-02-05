@@ -133,13 +133,13 @@ h3 {
     color: white;
 }
 
-p {
-    font-size: 18px;
+body div .p {
+    font-size: 20px;
     margin-top: 50px;
     text-align: center;
-    color: #333;
-    max-width: 500px;
-    margin: 0 auto;
+    color: white;
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
 }
 
