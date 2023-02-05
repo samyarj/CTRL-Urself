@@ -29,8 +29,8 @@ recommanderMul("question1");
 recommanderUni("question2");
 
 }
-else
-{
-  header("Location: test.html");
-}
+// else
+// {
+//   header("Location: test.html");
+// }
 ?>
