@@ -130,6 +130,120 @@ if (isset($_GET['question2'])) {
       }
     }
 }
+if (isset($_GET['question3'])) {
+  $reponse = $_GET['question3'];
+  if ($reponse == "REPONSE 1") {
+        echo "";
+      } else if ($reponse == "REPONSE 2") {
+        echo recommandationsReseaux();
+      }
+         else if ($reponse == "REPONSE 3") {
+        echo recommandationsReseaux();
+      }
+      else {
+        echo recommandationsReseaux();
+      }
+}
+if (isset($_GET['question4'])) {
+  $reponse = $_GET['question4'];
+  if ($reponse == "REPONSE 1") {
+        echo "";
+      } else if ($reponse == "REPONSE 2") {
+        echo recommandationsReseaux();
+      }
+         else if ($reponse == "REPONSE 3") {
+        echo recommandationsReseaux();
+      }
+      else {
+        echo recommandationsReseaux();
+      }
+}
+if (isset($_GET['question5'])) {
+  $reponse = $_GET['question5'];
+  if ($reponse == "REPONSE 1") {
+        echo "";
+      } else if ($reponse == "REPONSE 2") {
+        echo recommandationsReseaux();
+      }
+         else if ($reponse == "REPONSE 3") {
+        echo recommandationsReseaux();
+      }
+      else {
+        echo recommandationsReseaux();
+      }
+}
+if (isset($_GET['question6'])) {
+  $reponse = $_GET['question6'];
+  if ($reponse == "REPONSE 1") {
+        echo "";
+      } else if ($reponse == "REPONSE 2") {
+        echo recommandationsDivertissement();
+      }
+         else if ($reponse == "REPONSE 3") {
+        echo recommandationsDivertissement();
+      }
+      else {
+        echo recommandationsDivertissement();
+      }
+}
+if (isset($_GET['question7'])) {
+    foreach ($_GET['question7'] as $reponse) {
+      if ($reponse == "REPONSE 1") {
+        echo recommandationsNetflix();
+      } else if ($reponse == "REPONSE 2") {
+        echo recommandationsCrunchyroll();
+      }
+         else if ($reponse == "REPONSE 3") {
+        echo recommandationsYoutube();
+      }
+      else {
+        echo "";
+      }
+    }
+}
+if (isset($_GET['question8'])) {
+  $reponse = $_GET['question8'];
+  if ($reponse == "REPONSE 1") {
+        echo "";
+      } else if ($reponse == "REPONSE 2") {
+        echo recommandationsReseaux();
+      }
+         else if ($reponse == "REPONSE 3") {
+        echo recommandationsReseaux();
+      }
+      else {
+        echo recommandationsReseaux();
+      }
+}
+if (isset($_GET['question9'])) {
+  $reponse = $_GET['question9'];
+  if ($reponse == "REPONSE 1") {
+        echo "";
+      } else if ($reponse == "REPONSE 2") {
+        echo recommandationsJeuxVideos();
+      }
+         else if ($reponse == "REPONSE 3") {
+        echo recommandationsJeuxMultijoueurs();
+      }
+      else {
+        echo recommandationsJeuxVideos();
+      }
+}
+if (isset($_GET['question10'])) {
+    foreach ($_GET['question10'] as $reponse) {
+      if ($reponse == "REPONSE 1") {
+        echo "";
+      } else if ($reponse == "REPONSE 2") {
+        echo recommandationsJeuxSolos();
+      }
+         else if ($reponse == "REPONSE 3") {
+        echo recommandationsTwitter();
+      }
+      else {
+        echo recommandationsCompetitif();
+      }
+    }
+}
 
 function recommandationsGenerales() {
   $html = "<div>";
@@ -204,6 +318,27 @@ function recommandationsCrunchyroll() {
 function recommandationsJeuxVideos() {
   $html = "<div>";
   $html .= "<p>Recommandations jeux-vidéos</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsJeuxSolos() {
+  $html = "<div>";
+  $html .= "<p>Recommandations jeux Solos</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsJeuxMultijoueurs() {
+  $html = "<div>";
+  $html .= "<p>Recommandations jeux multijoueurs</p>";
+  $html .= "<p>...</p>";
+  $html .= "</div>";
+  return $html;
+}
+function recommandationsCompetitif() {
+  $html = "<div>";
+  $html .= "<p>Recommandations jeux compétitif</p>";
   $html .= "<p>...</p>";
   $html .= "</div>";
   return $html;
