@@ -137,43 +137,43 @@ if (isset($_GET['question3'])) {
   if ($reponse == "REPONSE 1") {
         echo "";
       } else if ($reponse == "REPONSE 2") {
-        echo recommandationsReseaux();
+        echo recommandationsGenerales();
       }
          else if ($reponse == "REPONSE 3") {
-        echo recommandationsReseaux();
+        echo recommandationsGenerales();
       }
       else {
-        echo recommandationsReseaux();
+        echo recommandationsGenerales();
       }
 }
-if (isset($_GET['question4'])) {
-  $reponse = $_GET['question4'];
-  if ($reponse == "REPONSE 1") {
-        echo "";
-      } else if ($reponse == "REPONSE 2") {
-        echo recommandationsReseaux();
-      }
-         else if ($reponse == "REPONSE 3") {
-        echo recommandationsReseaux();
-      }
-      else {
-        echo recommandationsReseaux();
-      }
-}
-if (isset($_GET['question5'])) {
-  $reponse = $_GET['question5'];
-  if ($reponse == "REPONSE 1") {
-        echo "";
-      } else if ($reponse == "REPONSE 2") {
-        echo recommandationsReseaux();
-      }
-         else if ($reponse == "REPONSE 3") {
-        echo recommandationsReseaux();
-      }
-      else {
-        echo recommandationsReseaux();
-      }
-}
+// if (isset($_GET['question4'])) {
+//   $reponse = $_GET['question4'];
+//   if ($reponse == "REPONSE 1") {
+//         echo "";
+//       } else if ($reponse == "REPONSE 2") {
+//         echo recommandationsReseaux();
+//       }
+//          else if ($reponse == "REPONSE 3") {
+//         echo recommandationsReseaux();
+//       }
+//       else {
+//         echo recommandationsReseaux();
+//       }
+// }
+// if (isset($_GET['question5'])) {
+//   $reponse = $_GET['question5'];
+//   if ($reponse == "REPONSE 1") {
+//         echo "";
+//       } else if ($reponse == "REPONSE 2") {
+//         echo recommandationsReseaux();
+//       }
+//          else if ($reponse == "REPONSE 3") {
+//         echo recommandationsReseaux();
+//       }
+//       else {
+//         echo recommandationsReseaux();
+//       }
+// }
 if (isset($_GET['question6'])) {
   $reponse = $_GET['question6'];
   if ($reponse == "REPONSE 1") {
@@ -203,20 +203,20 @@ if (isset($_GET['question7'])) {
       }
     }
 }
-if (isset($_GET['question8'])) {
-  $reponse = $_GET['question8'];
-  if ($reponse == "REPONSE 1") {
-        echo "";
-      } else if ($reponse == "REPONSE 2") {
-        echo recommandationsReseaux();
-      }
-         else if ($reponse == "REPONSE 3") {
-        echo recommandationsReseaux();
-      }
-      else {
-        echo recommandationsReseaux();
-      }
-}
+// if (isset($_GET['question8'])) {
+//   $reponse = $_GET['question8'];
+//   if ($reponse == "REPONSE 1") {
+//         echo "";
+//       } else if ($reponse == "REPONSE 2") {
+//         echo recommandationsReseaux();
+//       }
+//          else if ($reponse == "REPONSE 3") {
+//         echo recommandationsReseaux();
+//       }
+//       else {
+//         echo recommandationsReseaux();
+//       }
+// }
 if (isset($_GET['question9'])) {
   $reponse = $_GET['question9'];
   if ($reponse == "REPONSE 1") {
@@ -249,8 +249,15 @@ if (isset($_GET['question10'])) {
 
 function recommandationsGenerales() {
   $html = "<div>";
-  $html .= "<g>Recommandations générales</g>";
-  $html .= "<f>...</f>";
+  $html .= "<g>Pour mieux gérer sa relation avec les écrans</g>";
+  $html .= "<f>-Évitez de «scroll» sur vos téléphones au moins 30 minute avant de dormir et après vous être réveillés. Une bonne solution serait de charger le téléphone dans une pièce à l’extérieur de la chambre durant la nuit.
+  -Faites du souper un moment réservé sans téléphone pour se reconnecter avec les autres.
+  -Prendre une journée de congé de son téléphone: Ce jour sera dédié à examiner comment l’utilisation du téléphone avec intention peut améliorer votre humeur, votre concentration ainsi que vos relations.
+  -Réglez vos paramètres de notifications pour ne recevoir que des alertes provenant de personnes réelles.
+  -Mettez votre téléphone en «GreyScale». Sur Iphone, aller dans général/accessibilité/affichage et taille de texte/Niveaux de gris.
+  -Faites un ménage de votre écran d’accueil­; ne conservez que les applications qui sont de réels outils pour vous et utilisez la barre de recherche de votre téléphone pour accéder aux autres applications (pour limiter le temps de «scroll» inconscient).
+  -Non seulement vous pouvez limiter le nombre de notifications que vous recevez, mais vous pouvez aussi enlever les bannières d’informations qui sont faites spécifiquement pour causer une peur de manquer des nouvelles (Fear of missing out).
+  </f>";
   $html .= "</div>";
   return $html;
 }
