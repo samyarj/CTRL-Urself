@@ -3,7 +3,7 @@ This repository contains the front-end and back-end files for a website that pro
 
 ## How to Use 💡
 
-* Open the `index.html` file in a web browser: ```https://hackatonxx.nmbm.repl.co/``` 🌐
+* Open the `index.html` file in a web browser: https://hackatonxx.nmbm.repl.co/ 🌐
 
 * Answer the multiple choice questions 🤔.
 
