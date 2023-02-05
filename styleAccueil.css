@@ -66,8 +66,11 @@ p{
     justify-content: center;
 }
 
-footer {
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
+footer{
+    font-family: Apple Chancery;
+    font-size: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
