@@ -101,6 +101,8 @@
   
   <?php
 
+
+
 if (isset($_GET['question1'])) {
   $reponse = $_GET['question1'];
   if ($reponse == "REPONSE 1") {
@@ -247,22 +249,22 @@ if (isset($_GET['question10'])) {
 
 function recommandationsGenerales() {
   $html = "<div>";
-  $html .= "<p>Recommandations générales</p>";
-  $html .= "<p>...</p>";
+  $html .= "<g>Recommandations générales</g>";
+  $html .= "<f>...</f>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsReseaux() {
   $html = "<div>";
-  $html .= "<p>Recommandations réseaux sociaux</p>";
-  $html .= "<p>...</p>";
+  $html .= "<g>Recommandations réseaux sociaux</g>";
+  $html .= "<f>...</f>";
   $html .= "</div>";
   return $html;
 }
 function recommandationsFacebook() {
   $html = "<div>";
-  $html .= "<p>Recommandations Facebook</p>";
-  $html .= "<p>...</p>";
+  $html .= "<g>Recommandations Facebook</g>";
+  $html .= "<f>...</f>";
   $html .= "</div>";
   return $html;
 }
