@@ -84,7 +84,8 @@ body {
 }
 
 .header .navigation a {
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold; 
     color: #333;
     text-decoration: none;
     margin-right: 20px;
