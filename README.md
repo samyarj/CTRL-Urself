@@ -22,13 +22,13 @@ The repository contains the following files: `index.html`, `style.css`, `script.
 ### Front-End 🎨
 The front-end of the website is composed of:
 
-* `index.html` - The main HTML file that defines the structure and content of the website 📄.
-
+* `index.html` - The main HTML file defines the Home page of the website that links to the form.
 * `style.css` and `AutreCss.css` - The stylesheet files that is responsible for the website's appearance and layout 🎨.
 
 ### Back-End 💻
 The back-end of the website is composed of:
 
 * `script.js` - The JavaScript file that implements the functionality of the website and interacts with the front-end 🔨.
-* `phpWriter.php` et `process_form.php` - The PHP files generate customized recommendations dependig on the user's selections
+* `process_form.php` - This PHP file is reponsable for capturing the user's answers once the form is submitted
+* `phpWriter.php` - This PHP file generate customized recommendations dependig on the user's selections
 
