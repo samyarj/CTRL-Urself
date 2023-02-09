@@ -30,4 +30,5 @@ The front-end of the website is composed of:
 The back-end of the website is composed of:
 
 * `script.js` - The JavaScript file that implements the functionality of the website and interacts with the front-end 🔨.
+* `phpWriter.php` et `process_form.php` - The PHP files generate customized recommendations dependig on the user's selections
 
