@@ -17,9 +17,7 @@
   
   <body>  
     <e>
-    <form action="process_form.php" method="get" id="form"> 
-      <!-- ajouter action "link" -->
-    
+    <form action="process_form.php" method="get" id="form">     
       <p>QUESTION 1: Combien de temps passez-vous en moyenne par jour sur tous vos réseaux sociaux?</p>
       <input type="radio" name="question1" value="REPONSE 1"> Moins de 1h<br>
       <input type="radio" name="question1" value="REPONSE 2"> 1h-2h<br>
@@ -146,34 +144,7 @@ if (isset($_GET['question3'])) {
         echo recommandationsGenerales();
       }
 }
-// if (isset($_GET['question4'])) {
-//   $reponse = $_GET['question4'];
-//   if ($reponse == "REPONSE 1") {
-//         echo "";
-//       } else if ($reponse == "REPONSE 2") {
-//         echo recommandationsReseaux();
-//       }
-//          else if ($reponse == "REPONSE 3") {
-//         echo recommandationsReseaux();
-//       }
-//       else {
-//         echo recommandationsReseaux();
-//       }
-// }
-// if (isset($_GET['question5'])) {
-//   $reponse = $_GET['question5'];
-//   if ($reponse == "REPONSE 1") {
-//         echo "";
-//       } else if ($reponse == "REPONSE 2") {
-//         echo recommandationsReseaux();
-//       }
-//          else if ($reponse == "REPONSE 3") {
-//         echo recommandationsReseaux();
-//       }
-//       else {
-//         echo recommandationsReseaux();
-//       }
-// }
+
 if (isset($_GET['question6'])) {
   $reponse = $_GET['question6'];
   if ($reponse == "REPONSE 1") {
@@ -203,20 +174,7 @@ if (isset($_GET['question7'])) {
       }
     }
 }
-// if (isset($_GET['question8'])) {
-//   $reponse = $_GET['question8'];
-//   if ($reponse == "REPONSE 1") {
-//         echo "";
-//       } else if ($reponse == "REPONSE 2") {
-//         echo recommandationsReseaux();
-//       }
-//          else if ($reponse == "REPONSE 3") {
-//         echo recommandationsReseaux();
-//       }
-//       else {
-//         echo recommandationsReseaux();
-//       }
-// }
+
 if (isset($_GET['question9'])) {
   $reponse = $_GET['question9'];
   if ($reponse == "REPONSE 1") {

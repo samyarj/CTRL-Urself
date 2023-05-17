@@ -19,3 +19,4 @@ form.addEventListener("submit", function(event) {
     console.log(inputs[i].name + ": " + inputs[i].value);
   }
 });
+

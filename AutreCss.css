@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
 }
+
 /* button styling */
 .button {
     --border-right: 6px;
@@ -24,8 +25,8 @@
     -webkit-text-stroke: 1px
     var(--text-stroke-color);
 }
-/* this is the text,
-when you hover on button */
+
+/* this is the text, when you hover on button */
 .hover-text {
     position: absolute;
     box-sizing: border-box;
@@ -40,6 +41,7 @@ when you hover on button */
     -webkit-text-stroke: 1px
     var(--animation-color);
 }
+
 /* hover */
 .button:hover .hover-text {
     width: 100%;
@@ -54,6 +56,7 @@ body {
     margin: 0;
     background: linear-gradient(to bottom, #383839, #454445, #000000);
 }
+
 .header {
     background-color: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -63,6 +66,7 @@ body {
     justify-content: space-between;
     padding: 0 20px;
 }
+
 .logo {
     /* width: 2%; */
     max-width: 50px;
@@ -174,3 +178,4 @@ footer {
     font-size: 14px;
     color: white;
 }
+
